@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профиль пользователя Best Games">
+    <title>Профиль — Best Games</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+
+        <a href="index.html" class="logo">
+            <span class="logo__text">BEST</span>
+            <span class="logo__accent">GAMES</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="catalog.html" class="nav__link">Каталог</a>
+            <a href="index.html#popular" class="nav__link">Популярное</a>
+            <a href="index.html#partners" class="nav__link">Партнёры</a>
+        </nav>
+
+        <div class="header__actions">
+            <a href="login.html" class="header__login">Выйти</a>
+
+            <a href="profile.html" class="header__profile">
+                ◉
+            </a>
+
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu">
+        <div class="container mobile-menu__inner">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="index.html#popular">Популярное</a>
+            <a href="index.html#partners">Партнёры</a>
+            <a href="profile.html">Профиль</a>
+        </div>
+    </div>
+</header>
+
+
+<main class="profile-page">
+
+    <div class="container">
+
+        <div class="profile__heading">
+            <span class="section-label">ЛИЧНЫЙ КАБИНЕТ</span>
+
+            <h1 class="section-title">
+                Мой профиль
+            </h1>
+
+            <p>
+                Управляйте личными данными, покупками и настройками аккаунта.
+            </p>
+        </div>
+<div class="profile-setting">
+    <div>
+        <h3>Тема оформления</h3>
+        <p>Выберите тему сайта</p>
+    </div>
+
+    <div class="theme-buttons">
+        <a href="index.html" class="button button--secondary">
+            Тёмная
+        </a>
+
+        <a href="index_light.html" class="button button--secondary">
+            Светлая
+        </a>
+    </div>
+</div>
+
+        <div class="profile__layout">
+
+            <!-- Информация пользователя -->
+
+            <section class="profile-card">
+
+                <div class="profile-card__header">
+                    <div class="profile-avatar">
+                        ИИ
+                    </div>
+
+                    <div>
+                        <h2>Иван Иванов</h2>
+                        <p>Покупатель Best Games</p>
+                    </div>
+                </div>
+
+
+                <div class="profile-info">
+
+                    <div class="profile-info__item">
+                        <span>Электронная почта</span>
+                        <strong>ivan@example.ru</strong>
+                    </div>
+
+                    <div class="profile-info__item">
+                        <span>Телефон</span>
+                        <strong>+7 (999) 123-45-67</strong>
+                    </div>
+
+                    <div class="profile-info__item">
+                        <span>Дата рождения</span>
+                        <strong>15.05.2000</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- История покупок -->
+
+            <section class="profile-card profile-card--wide">
+
+                <div class="profile-card__title">
+                    <div>
+                        <span class="section-label">ПОКУПКИ</span>
+                        <h2>История покупок</h2>
+                    </div>
+                </div>
+
+
+                <div class="purchase-table">
+
+                    <div class="purchase-table__head">
+                        <span>Дата</span>
+                        <span>Игра</span>
+                        <span>Товар</span>
+                        <span>Цена</span>
+                    </div>
+
+
+                    <div class="purchase-table__row">
+                        <span>12.10.2026</span>
+                        <span>Minecraft</span>
+                        <span>Игра</span>
+                        <strong>1 999 ₽</strong>
+                    </div>
+
+
+                    <div class="purchase-table__row">
+                        <span>03.10.2026</span>
+                        <span>Adventure Quest</span>
+                        <span>Игра</span>
+                        <strong>1 499 ₽</strong>
+                    </div>
+
+
+                    <div class="purchase-table__row">
+                        <span>21.09.2026</span>
+                        <span>Action Legends</span>
+                        <span>Игра</span>
+                        <strong>2 299 ₽</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Настройки -->
+
+            <section class="profile-card">
+
+                <div class="profile-card__title">
+                    <span class="section-label">НАСТРОЙКИ</span>
+
+                    <h2>Настройки</h2>
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-item">
+                        <div>
+                            <strong>Тема сайта</strong>
+                            <p>Выберите оформление интерфейса.</p>
+                        </div>
+
+                        <a href="index_light.html" class="button button--small">
+                            Светлая
+                        </a>
+                    </div>
+
+
+                    <div class="settings-item">
+                        <div>
+                            <strong>Уведомления</strong>
+                            <p>Получать новости и специальные предложения.</p>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="switch__slider"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Смена пароля -->
+
+            <section class="profile-card">
+
+                <div class="profile-card__title">
+                    <span class="section-label">БЕЗОПАСНОСТЬ</span>
+
+                    <h2>Изменить пароль</h2>
+                </div>
+
+
+                <form class="password-form" action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="old-password">
+                            Текущий пароль
+                        </label>
+
+                        <input
+                            type="password"
+                            id="old-password"
+                            name="old-password"
+                            placeholder="Текущий пароль"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="new-password">
+                            Новый пароль
+                        </label>
+
+                        <input
+                            type="password"
+                            id="new-password"
+                            name="new-password"
+                            placeholder="Новый пароль"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="repeat-password">
+                            Повторите пароль
+                        </label>
+
+                        <input
+                            type="password"
+                            id="repeat-password"
+                            name="repeat-password"
+                            placeholder="Повторите пароль"
+                        >
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="button button--primary"
+                    >
+                        Сохранить пароль
+                    </button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__top">
+
+            <div class="footer__brand">
+                <a href="index.html" class="logo">
+                    <span class="logo__text">BEST</span>
+                    <span class="logo__accent">GAMES</span>
+                </a>
+
+                <p>
+                    Магазин компьютерных игр для настоящих игроков.
+                </p>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Клиентам</h3>
+
+                <a href="catalog.html">Каталог</a>
+                <a href="login.html">Войти</a>
+                <a href="register.html">Регистрация</a>
+                <a href="profile.html">Профиль</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Партнёрам</h3>
+
+                <a href="#">Стать партнёром</a>
+                <a href="#">Условия сотрудничества</a>
+                <a href="#">Реклама</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>О нас</h3>
+
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Помощь</a>
+            </div>
+
+
+            <div class="footer__column footer__contacts">
+                <h3>Контакты</h3>
+
+                <a href="tel:88009995599">
+                    8-800-999-55-99
+                </a>
+
+                <a href="mailto:best@games.ru">
+                    best@games.ru
+                </a>
+
+                <span>Ежедневно, 24/7</span>
+            </div>
+
+        </div>
+
+
+        <div class="footer__bottom">
+
+            <p>
+                © 2026 Best Games. Все права защищены.
+            </p>
+
+            <div class="footer__links">
+                <a href="index_light.html">
+                    Светлая тема
+                </a>
+
+                <a href="#">
+                    Политика конфиденциальности
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

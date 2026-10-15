@@ -1,0 +1,483 @@
+/* =========================================================
+   BEST GAMES — ПОЛНЫЙ ПЕРЕХОД НА СВЕТЛУЮ ТЕМУ
+   Добавить в самый конец css/light.css
+   ========================================================= */
+
+:root {
+    color-scheme: light;
+}
+
+/* Основной фон и текст */
+
+html,
+body {
+    background: #f5f7fc !important;
+    color: #20243a;
+}
+
+main,
+section {
+    color: #20243a;
+}
+
+/* Шапка и навигация */
+
+.header,
+.mobile-menu,
+.mobile-menu--active {
+    background: #ffffff !important;
+    border-color: #e3e6f0 !important;
+}
+
+.logo__text,
+.header__login,
+.nav__link--active {
+    color: #20243a;
+}
+
+.burger {
+    background: #ffffff;
+    border-color: #dfe3ef;
+}
+
+.burger span {
+    background: #303650;
+}
+
+/* Кнопки */
+
+.button--small,
+.catalog__filter-button {
+    background: #ffffff !important;
+    color: #303650 !important;
+    border-color: #dfe3ef !important;
+}
+
+.button--small:hover,
+.catalog__filter-button:hover {
+    background: #f0f1ff !important;
+    color: #4548c7 !important;
+    border-color: #b9bbff !important;
+}
+
+/* Слайдер */
+
+.hero,
+.hero__slider {
+    background-color: #ffffff;
+}
+
+.hero__slider {
+    border-color: #e3e6f0;
+}
+
+.hero__content {
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #ffffff 65%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.hero__image::after {
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.78) 25%,
+        rgba(255, 255, 255, 0.2) 55%,
+        transparent 100%
+    );
+}
+
+/* Поиск и поля ввода */
+
+.search-box,
+.search-form,
+.search-form__input,
+.form-group input,
+.auth input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+.admin-card select,
+.admin-card textarea,
+.catalog-sort {
+    background-color: #ffffff !important;
+    color: #20243a !important;
+    border-color: #dfe3ef !important;
+}
+
+.search-form__input::placeholder,
+.form-group input::placeholder {
+    color: #8a90a5 !important;
+}
+
+.search-form__input:focus,
+.form-group input:focus,
+.admin-card select:focus,
+.admin-card textarea:focus {
+    border-color: #7779e8 !important;
+}
+
+/* Карточки преимуществ, игр и партнёров */
+
+.advantage,
+.game-card,
+.catalog-games .game-card,
+.partner,
+.promo__inner,
+.profile-card,
+.auth,
+.catalog-filter,
+.admin-card {
+    background-color: #ffffff !important;
+    color: #20243a;
+    border-color: #e3e6f0 !important;
+}
+
+.advantage h3,
+.game-card__title,
+.game-card__price,
+.partner h3,
+.profile-card h2,
+.auth h1,
+.auth h2,
+.auth h3 {
+    color: #20243a;
+}
+
+.advantage p,
+.game-card__developer,
+.game-card__description,
+.catalog__heading p,
+.catalog-games__top p,
+.auth__header p,
+.auth__footer p,
+.profile__heading p,
+.profile-card p {
+    color: #687087;
+}
+
+/* Каталог и фильтры */
+
+.catalog-filter__header h2,
+.catalog-games__top strong {
+    color: #20243a !important;
+}
+
+.catalog-filter__header button {
+    color: #687087;
+}
+
+.filter-option {
+    color: #515970 !important;
+}
+
+.filter-option input,
+.form-checkbox input {
+    accent-color: #4c4fd6;
+}
+
+/* Промо-блок */
+
+.promo__inner {
+    background-color: #ffffff !important;
+}
+
+.promo__content {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.98) 0%,
+        rgba(255, 255, 255, 0.92) 60%,
+        rgba(255, 255, 255, 0.08) 100%
+    );
+}
+
+.promo__content h2 {
+    color: #20243a;
+}
+
+.promo__content p {
+    color: #515970;
+}
+
+/* Формы входа, регистрации и восстановления */
+
+.auth {
+    background: #ffffff !important;
+    border-color: #e3e6f0 !important;
+}
+
+.auth__footer,
+.auth__footer,
+.profile-card__header,
+.purchase-table__head,
+.purchase-table__row,
+.settings-item {
+    border-color: #e3e6f0;
+}
+
+.form-group label {
+    color: #303650;
+}
+
+.form-checkbox {
+    color: #687087;
+}
+
+/* Профиль и настройки */
+
+.profile-avatar {
+    background: #e9eaff;
+    color: #4c4fd6;
+}
+
+.profile-info__item span,
+.settings-item p,
+.purchase-table__head {
+    color: #687087;
+}
+
+.profile-info__item strong,
+.settings-item strong {
+    color: #20243a;
+}
+
+.switch__slider {
+    background: #cbd0e0;
+}
+
+.switch input:checked + .switch__slider {
+    background: #4c4fd6;
+}
+
+/* Админ-панель и прочие поля */
+
+.admin-card input[type="file"] {
+    background: #ffffff !important;
+    color: #515970 !important;
+    border-color: #dfe3ef !important;
+}
+
+/* Нижняя часть сайта */
+
+.footer {
+    background: #ffffff !important;
+    border-top-color: #e3e6f0 !important;
+}
+
+.footer__column h3,
+.footer__contacts a:first-of-type {
+    color: #20243a;
+}
+
+.footer__brand p,
+.footer__column a,
+.footer__column span,
+.footer__bottom p,
+.footer__links a {
+    color: #687087;
+}
+
+.footer__bottom {
+    border-top-color: #e3e6f0 !important;
+}
+
+/* Ссылки и акцентные элементы */
+
+.section-link,
+.auth__recovery,
+.auth__footer a {
+    color: #4c4fd6;
+}
+
+.section-link:hover,
+.auth__recovery:hover {
+    color: #3739b5;
+}
+
+/* Светлые разделители */
+
+hr,
+.divider {
+    border-color: #e3e6f0;
+}
+
+/* Не затрагиваем геометрию, размеры и позиционирование */
+/* =========================================================
+   FIX — СВЕТЛЫЕ КНОПКИ И КАТАЛОГ
+   ========================================================= */
+
+/* Все обычные кнопки */
+
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    color: #303650;
+}
+
+.button--primary,
+button.button--primary,
+input[type="submit"].button--primary {
+    background: #4c4fd6 !important;
+    color: #ffffff !important;
+    border-color: #4c4fd6 !important;
+}
+
+.button--primary:hover,
+button.button--primary:hover {
+    background: #3739b5 !important;
+    color: #ffffff !important;
+}
+
+/* Второстепенные кнопки */
+
+.button--small,
+button.button--small,
+.catalog__filter-button,
+.catalog-filter__header button {
+    background: #ffffff !important;
+    color: #303650 !important;
+    border: 1px solid #dfe3ef !important;
+}
+
+.button--small:hover,
+.catalog__filter-button:hover,
+.catalog-filter__header button:hover {
+    background: #f0f1ff !important;
+    color: #4548c7 !important;
+    border-color: #b9bbff !important;
+}
+
+/* Каталог: фон, фильтры и сортировка */
+
+.catalog-page,
+.catalog__layout,
+.catalog-games,
+.catalog-games__top {
+    background: transparent !important;
+    color: #20243a !important;
+}
+
+.catalog-filter,
+.catalog-games .game-card,
+.catalog-sort,
+.catalog__filter-button {
+    background-color: #ffffff !important;
+    color: #303650 !important;
+    border-color: #e3e6f0 !important;
+}
+
+.catalog-filter__header h2,
+.catalog-games__top strong,
+.catalog__heading h1,
+.catalog__heading h2 {
+    color: #20243a !important;
+}
+
+.catalog-filter__header button {
+    color: #687087 !important;
+}
+
+.filter-option {
+    color: #515970 !important;
+}
+
+.filter-option input {
+    accent-color: #4c4fd6;
+}
+
+.catalog-sort option {
+    background: #ffffff;
+    color: #20243a;
+}
+
+/* Кнопки внутри карточек каталога */
+
+.catalog-games .game-card .button,
+.catalog-games .game-card .button--small {
+    background: #ffffff !important;
+    color: #303650 !important;
+    border: 1px solid #dfe3ef !important;
+}
+
+.catalog-games .game-card .button--primary {
+    background: #4c4fd6 !important;
+    color: #ffffff !important;
+    border-color: #4c4fd6 !important;
+}
+
+/* Карточки и блоки остальных разделов */
+
+.advantage,
+.game-card,
+.partner,
+.profile-card,
+.auth,
+.catalog-filter,
+.search-box,
+.promo__inner {
+    background-color: #ffffff !important;
+    color: #20243a !important;
+    border-color: #e3e6f0 !important;
+}
+
+/* Поля ввода на всех страницах */
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="submit"]):not([type="button"]):not([type="reset"]),
+select,
+textarea {
+    background-color: #ffffff !important;
+    color: #20243a !important;
+    border-color: #dfe3ef !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8a90a5 !important;
+}
+
+/* Мобильное меню */
+
+.mobile-menu {
+    background: #ffffff !important;
+    border-color: #e3e6f0 !important;
+}
+
+.mobile-menu__list a {
+    color: #303650 !important;
+}
+
+.mobile-menu__list a:hover {
+    background: #f0f1ff !important;
+    color: #4c4fd6 !important;
+}
+
+/* Текст в каталоге и карточках */
+
+.game-card__title,
+.game-card__price,
+.game-card h3 {
+    color: #20243a !important;
+}
+
+.game-card__developer,
+.game-card__description,
+.catalog-games__top p {
+    color: #687087 !important;
+}
+
+/* Подвал */
+
+.footer {
+    background: #ffffff !important;
+    border-color: #e3e6f0 !important;
+}
+
+/* Сохраняем акцентные цвета ссылок */
+
+.section-link,
+.game-card__genre,
+.auth__recovery {
+    color: #4c4fd6;
+}

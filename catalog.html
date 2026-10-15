@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог компьютерных игр Best Games">
+    <title>Каталог — Best Games</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+
+        <a href="index.html" class="logo">
+            <span class="logo__text">BEST</span>
+            <span class="logo__accent">GAMES</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="catalog.html" class="nav__link nav__link--active">Каталог</a>
+            <a href="index.html#popular" class="nav__link">Популярное</a>
+            <a href="index.html#partners" class="nav__link">Партнёры</a>
+        </nav>
+
+        <div class="header__actions">
+            <a href="login.html" class="header__login">Войти</a>
+            <a href="profile.html" class="header__profile">◉</a>
+
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu">
+        <div class="container mobile-menu__inner">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="index.html#popular">Популярное</a>
+            <a href="index.html#partners">Партнёры</a>
+            <a href="login.html">Войти</a>
+        </div>
+    </div>
+</header>
+
+
+<main class="catalog-page">
+
+    <div class="container">
+
+        <div class="catalog__heading">
+
+            <div>
+                <span class="section-label">BEST GAMES</span>
+
+                <h1 class="section-title">
+                    Каталог игр
+                </h1>
+
+                <p>
+                    Найдите игру по жанру и выберите свой следующий проект.
+                </p>
+            </div>
+
+            <button
+                class="catalog__filter-button"
+                type="button"
+            >
+                Фильтр
+            </button>
+
+        </div>
+
+
+        <div class="catalog__layout">
+
+            <!-- Фильтр -->
+
+            <aside class="catalog-filter">
+
+                <div class="catalog-filter__header">
+                    <h2>Жанр</h2>
+                    <button type="button">Сбросить</button>
+                </div>
+
+
+                <form action="catalog.html" method="get">
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="genre"
+                            value="all"
+                            checked
+                        >
+                        <span>Все игры</span>
+                    </label>
+
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="genre"
+                            value="action"
+                        >
+                        <span>Экшен</span>
+                    </label>
+
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="genre"
+                            value="rpg"
+                        >
+                        <span>RPG</span>
+                    </label>
+
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="genre"
+                            value="adventure"
+                        >
+                        <span>Приключения</span>
+                    </label>
+
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="genre"
+                            value="strategy"
+                        >
+                        <span>Стратегии</span>
+                    </label>
+
+
+                    <label class="filter-option">
+                        <input
+                            type="radio"
+                            name="genre"
+                            value="sandbox"
+                        >
+                        <span>Песочница</span>
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="button button--primary filter-submit"
+                    >
+                        Применить
+                    </button>
+
+                </form>
+
+            </aside>
+
+
+            <!-- Игры -->
+
+            <section class="catalog-games">
+
+                <div class="catalog-games__top">
+
+                    <p>
+                        Найдено игр: <strong>6</strong>
+                    </p>
+
+                    <select
+                        class="catalog-sort"
+                        name="sort"
+                        aria-label="Сортировка"
+                    >
+                        <option value="popular">
+                            По популярности
+                        </option>
+
+                        <option value="price-low">
+                            Сначала дешевле
+                        </option>
+
+                        <option value="price-high">
+                            Сначала дороже
+                        </option>
+
+                        <option value="rating">
+                            По рейтингу
+                        </option>
+                    </select>
+
+                </div>
+
+
+                <div class="catalog-games__grid">
+
+                    <!-- 1 -->
+
+                    <article class="game-card">
+
+                        <a href="catalog.html" class="game-card__media">
+                            <img
+                                class="game-card__image"
+                                src="img/games/minecraft.jpg"
+                                alt="Minecraft"
+                            >
+                        </a>
+
+                        <div class="game-card__content">
+
+                            <div class="game-card__top">
+                                <span class="game-card__genre">
+                                    Песочница
+                                </span>
+
+                                <span class="game-card__rating">
+                                    ★ 4.9
+                                </span>
+                            </div>
+
+                            <h2 class="game-card__title">
+                                Minecraft
+                            </h2>
+
+                            <p class="game-card__developer">
+                                Mojang Studios
+                            </p>
+
+                            <p class="game-card__description">
+                                Исследуйте огромный мир, создавайте предметы
+                                и стройте собственные сооружения.
+                            </p>
+
+                            <div class="game-card__bottom">
+
+                                <span class="game-card__price">
+                                    1 999 ₽
+                                </span>
+
+                                <a
+                                    href="catalog.html"
+                                    class="button button--small"
+                                >
+                                    Подробнее
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 2 -->
+
+                    <article class="game-card">
+
+                        <a href="catalog.html" class="game-card__media">
+                            <img
+                                class="game-card__image"
+                                src="img/games/minecraft-world.png"
+                                alt="Minecraft World"
+                            >
+                        </a>
+
+                        <div class="game-card__content">
+
+                            <div class="game-card__top">
+                                <span class="game-card__genre">
+                                    Приключения
+                                </span>
+
+                                <span class="game-card__rating">
+                                    ★ 4.8
+                                </span>
+                            </div>
+
+                            <h2 class="game-card__title">
+                                Minecraft World
+                            </h2>
+
+                            <p class="game-card__developer">
+                                Mojang Studios
+                            </p>
+
+                            <p class="game-card__description">
+                                Новые приключения, исследование игрового мира
+                                и множество интересных испытаний.
+                            </p>
+
+                            <div class="game-card__bottom">
+
+                                <span class="game-card__price">
+                                    1 799 ₽
+                                </span>
+
+                                <a
+                                    href="catalog.html"
+                                    class="button button--small"
+                                >
+                                    Подробнее
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 3 -->
+
+                    <article class="game-card">
+
+                        <a href="catalog.html" class="game-card__media">
+                            <img
+                                class="game-card__image"
+                                src="img/games/platform.jpg"
+                                alt="Adventure Quest"
+                            >
+                        </a>
+
+                        <div class="game-card__content">
+
+                            <div class="game-card__top">
+                                <span class="game-card__genre">
+                                    Экшен
+                                </span>
+
+                                <span class="game-card__rating">
+                                    ★ 4.7
+                                </span>
+                            </div>
+
+                            <h2 class="game-card__title">
+                                Adventure Quest
+                            </h2>
+
+                            <p class="game-card__developer">
+                                Best Games Studio
+                            </p>
+
+                            <p class="game-card__description">
+                                Динамичное приключение с опасными противниками
+                                и большим игровым миром.
+                            </p>
+
+                            <div class="game-card__bottom">
+
+                                <span class="game-card__price">
+                                    1 499 ₽
+                                </span>
+
+                                <a
+                                    href="catalog.html"
+                                    class="button button--small"
+                                >
+                                    Подробнее
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 4 -->
+
+                    <article class="game-card">
+
+                        <a href="catalog.html" class="game-card__media">
+                            <img
+                                class="game-card__image"
+                                src="img/banners/banner-games.jpg"
+                                alt="Action Legends"
+                            >
+                        </a>
+
+                        <div class="game-card__content">
+
+                            <div class="game-card__top">
+                                <span class="game-card__genre">
+                                    RPG
+                                </span>
+
+                                <span class="game-card__rating">
+                                    ★ 4.9
+                                </span>
+                            </div>
+
+                            <h2 class="game-card__title">
+                                Action Legends
+                            </h2>
+
+                            <p class="game-card__developer">
+                                Game Studio
+                            </p>
+
+                            <p class="game-card__description">
+                                Эпическое приключение с развитием персонажа,
+                                сражениями и исследованием мира.
+                            </p>
+
+                            <div class="game-card__bottom">
+
+                                <span class="game-card__price">
+                                    2 299 ₽
+                                </span>
+
+                                <a
+                                    href="catalog.html"
+                                    class="button button--small"
+                                >
+                                    Подробнее
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 5 -->
+
+                    <article class="game-card">
+
+                        <a href="catalog.html" class="game-card__media">
+                            <img
+                                class="game-card__image"
+                                src="img/banners/banner-characters.jpg"
+                                alt="Legends of Games"
+                            >
+                        </a>
+
+                        <div class="game-card__content">
+
+                            <div class="game-card__top">
+                                <span class="game-card__genre">
+                                    Приключения
+                                </span>
+
+                                <span class="game-card__rating">
+                                    ★ 4.6
+                                </span>
+                            </div>
+
+                            <h2 class="game-card__title">
+                                Legends of Games
+                            </h2>
+
+                            <p class="game-card__developer">
+                                Game Works
+                            </p>
+
+                            <p class="game-card__description">
+                                Исследуйте красочный мир и отправляйтесь
+                                навстречу новым приключениям.
+                            </p>
+
+                            <div class="game-card__bottom">
+
+                                <span class="game-card__price">
+                                    1 299 ₽
+                                </span>
+
+                                <a
+                                    href="catalog.html"
+                                    class="button button--small"
+                                >
+                                    Подробнее
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 6 -->
+
+                    <article class="game-card">
+
+                        <a href="catalog.html" class="game-card__media">
+                            <img
+                                class="game-card__image"
+                                src="img/decorative/character.png"
+                                alt="Game Heroes"
+                            >
+                        </a>
+
+                        <div class="game-card__content">
+
+                            <div class="game-card__top">
+                                <span class="game-card__genre">
+                                    Стратегия
+                                </span>
+
+                                <span class="game-card__rating">
+                                    ★ 4.5
+                                </span>
+                            </div>
+
+                            <h2 class="game-card__title">
+                                Game Heroes
+                            </h2>
+
+                            <p class="game-card__developer">
+                                Digital Games
+                            </p>
+
+                            <p class="game-card__description">
+                                Продумывайте тактику, развивайте свою команду
+                                и добивайтесь победы.
+                            </p>
+
+                            <div class="game-card__bottom">
+
+                                <span class="game-card__price">
+                                    1 099 ₽
+                                </span>
+
+                                <a
+                                    href="catalog.html"
+                                    class="button button--small"
+                                >
+                                    Подробнее
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__top">
+
+            <div class="footer__brand">
+
+                <a href="index.html" class="logo">
+                    <span class="logo__text">BEST</span>
+                    <span class="logo__accent">GAMES</span>
+                </a>
+
+                <p>
+                    Магазин компьютерных игр для настоящих игроков.
+                </p>
+
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Клиентам</h3>
+
+                <a href="catalog.html">Каталог</a>
+                <a href="login.html">Войти</a>
+                <a href="register.html">Регистрация</a>
+                <a href="profile.html">Профиль</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Партнёрам</h3>
+
+                <a href="#">Стать партнёром</a>
+                <a href="#">Условия сотрудничества</a>
+                <a href="#">Реклама</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>О нас</h3>
+
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Помощь</a>
+            </div>
+
+
+            <div class="footer__column footer__contacts">
+                <h3>Контакты</h3>
+
+                <a href="tel:88009995599">
+                    8-800-999-55-99
+                </a>
+
+                <a href="mailto:best@games.ru">
+                    best@games.ru
+                </a>
+
+                <span>Ежедневно, 24/7</span>
+            </div>
+
+        </div>
+
+
+        <div class="footer__bottom">
+
+            <p>
+                © 2026 Best Games. Все права защищены.
+            </p>
+
+            <div class="footer__links">
+
+                <a href="index_light.html">
+                    Светлая тема
+                </a>
+
+                <a href="#">
+                    Политика конфиденциальности
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

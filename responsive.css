@@ -1,0 +1,526 @@
+/* =========================================================
+   BEST GAMES
+   Адаптивность
+   ========================================================= */
+
+
+/* =========================================================
+   1. ПЛАНШЕТ
+   768px — 1199px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .container {
+        width: min(100% - 40px, 960px);
+    }
+
+
+    /* HEADER */
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding-top: 25px;
+    }
+
+    .hero__slider,
+    .hero__slide {
+        min-height: 440px;
+    }
+
+    .hero__content {
+        width: 60%;
+        min-height: 440px;
+        padding: 40px;
+    }
+
+    .hero__image {
+        left: 30%;
+    }
+
+    .hero__controls {
+        left: 40px;
+    }
+
+
+    /* ADVANTAGES */
+
+    .advantages__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* GAMES */
+
+    .games__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* PROMO */
+
+    .promo__content {
+        width: 70%;
+        padding: 40px;
+    }
+
+
+    /* FOOTER */
+
+    .footer__top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   2. МОБИЛЬНЫЕ
+   до 767px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .container {
+        width: calc(100% - 30px);
+    }
+
+
+    /* HEADER */
+
+    .header__inner {
+        min-height: 68px;
+        gap: 15px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header__login {
+        display: none;
+    }
+
+    .header__profile {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        border-top: 1px solid #29292e;
+        background: #0b0b0d;
+    }
+
+    .mobile-menu__inner {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .mobile-menu__inner a {
+        padding: 13px 0;
+        border-bottom: 1px solid #222226;
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 15px 0 50px;
+    }
+
+    .hero__slider,
+    .hero__slide {
+        min-height: 560px;
+    }
+
+    .hero__content {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        min-height: 560px;
+        justify-content: flex-end;
+        padding: 30px 25px 60px;
+        background:
+            linear-gradient(
+                0deg,
+                #111113 5%,
+                rgba(17, 17, 19, 0.9) 45%,
+                rgba(17, 17, 19, 0.1) 100%
+            );
+    }
+
+    .hero__image {
+        left: 0;
+        bottom: 35%;
+        height: 65%;
+    }
+
+    .hero__image::after {
+        background:
+            linear-gradient(
+                0deg,
+                #111113 0%,
+                transparent 70%
+            );
+    }
+
+    .hero__title {
+        margin-bottom: 15px;
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .hero__description {
+        font-size: 14px;
+    }
+
+    .hero__price {
+        margin-bottom: 18px;
+    }
+
+    .hero__controls {
+        left: 25px;
+        bottom: 22px;
+    }
+
+
+    /* SEARCH */
+
+    .search-section {
+        padding-bottom: 55px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form__input {
+        min-height: 48px;
+    }
+
+
+    /* SECTION */
+
+    .section-heading {
+        margin-bottom: 25px;
+    }
+
+    .section-heading--row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    /* ADVANTAGES */
+
+    .advantages {
+        padding-bottom: 60px;
+    }
+
+    .advantages__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .advantage {
+        min-height: 190px;
+        padding: 18px;
+    }
+
+    .advantage__icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 14px;
+    }
+
+    .advantage h3 {
+        font-size: 15px;
+    }
+
+    .advantage p {
+        font-size: 12px;
+    }
+
+
+    /* GAMES */
+
+    .games {
+        padding-bottom: 60px;
+    }
+
+    .games__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .game-card__image {
+        height: 180px;
+    }
+
+    .game-card__content {
+        padding: 13px;
+    }
+
+    .game-card__title {
+        font-size: 15px;
+    }
+
+    .game-card__developer {
+        min-height: 36px;
+        font-size: 11px;
+    }
+
+    .game-card__price {
+        font-size: 13px;
+    }
+
+    .game-card__bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .button--small {
+        width: 100%;
+    }
+
+
+    /* PROMO */
+
+    .promo {
+        padding-bottom: 60px;
+    }
+
+    .promo__inner {
+        min-height: 430px;
+    }
+
+    .promo__image {
+        height: 430px;
+    }
+
+    .promo__content {
+        width: 100%;
+        height: 100%;
+        padding: 30px 25px;
+        justify-content: flex-end;
+        background:
+            linear-gradient(
+                0deg,
+                #111114 0%,
+                rgba(17, 17, 20, 0.75) 60%,
+                transparent 100%
+            );
+    }
+
+    .promo__content h2 {
+        font-size: 32px;
+    }
+
+
+    /* PARTNERS */
+
+    .partners {
+        padding-bottom: 60px;
+    }
+
+    .partners__grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .partner {
+        min-height: 90px;
+    }
+
+
+    /* FOOTER */
+
+    .footer__top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 45px 0 35px;
+    }
+
+    .footer__bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer__links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   3. ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ
+   до 420px
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .hero__slider,
+    .hero__slide {
+        min-height: 530px;
+    }
+
+    .hero__content {
+        min-height: 530px;
+        padding: 25px 20px 55px;
+    }
+
+    .hero__title {
+        font-size: 33px;
+    }
+
+    .hero__description {
+        font-size: 13px;
+    }
+
+    .hero__controls {
+        left: 20px;
+    }
+
+    .advantages__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .advantage {
+        min-height: auto;
+    }
+
+    .games__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-card__image {
+        height: 230px;
+    }
+
+    .promo__content {
+        padding: 25px 20px;
+    }
+
+}
+/* =========================
+   AUTH — MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .auth-page {
+        padding: 50px 0 70px;
+    }
+
+    .auth {
+        padding: 28px 20px;
+        border-radius: 18px;
+    }
+
+    .auth__header {
+        margin-bottom: 26px;
+    }
+
+}
+@media (max-width: 767px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .auth--register {
+        max-width: 520px;
+    }
+
+}
+@media (max-width: 767px) {
+
+    .profile-page {
+        padding: 50px 0 70px;
+    }
+
+    .profile__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card--wide {
+        grid-column: auto;
+    }
+
+    .profile-card {
+        padding: 22px;
+    }
+
+    .profile-card__header {
+        align-items: flex-start;
+    }
+
+    .settings-item {
+        align-items: flex-start;
+    }
+
+    .password-form .button {
+        width: 100%;
+    }
+
+}
+/* =========================
+   ADMIN RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+
+    .admin-page {
+        padding: 50px 0 70px;
+    }
+
+    .admin-card {
+        padding: 24px;
+    }
+
+    .admin-card .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}

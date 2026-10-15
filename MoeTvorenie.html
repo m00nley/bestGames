@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Вход в аккаунт Best Games">
+    <title>Вход — Best Games</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+
+        <a href="index.html" class="logo">
+            <span class="logo__text">BEST</span>
+            <span class="logo__accent">GAMES</span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="catalog.html" class="nav__link">Каталог</a>
+            <a href="index.html#popular" class="nav__link">Популярное</a>
+            <a href="index.html#partners" class="nav__link">Партнёры</a>
+        </nav>
+
+        <div class="header__actions">
+            <a href="MoeTvorenie.html" class="header__login">Войти</a>
+            <a href="profile.html" class="header__profile">◉</a>
+
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="mobile-menu">
+        <div class="container mobile-menu__inner">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="index.html#popular">Популярное</a>
+            <a href="index.html#partners">Партнёры</a>
+            <a href="MoeTvorenie.html">Войти</a>
+        </div>
+    </div>
+</header>
+
+
+<main class="auth-page">
+
+    <div class="container">
+
+        <section class="auth">
+
+            <div class="auth__header">
+                <span class="section-label">BEST GAMES</span>
+
+                <h1 class="section-title">
+                    Вход в аккаунт
+                </h1>
+
+                <p>
+                    Войдите, чтобы просматривать профиль и историю покупок.
+                </p>
+            </div>
+
+
+            <form class="auth__form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="email">
+                        Электронная почта
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@mail.ru"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password">
+                        Пароль
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Введите пароль"
+                        required
+                    >
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="button button--primary auth__button"
+                >
+                    Войти
+                </button>
+
+
+                <a href="#" class="auth__recovery">
+                    Восстановить пароль
+                </a>
+
+            </form>
+
+
+            <div class="auth__footer">
+                <p>
+                    Нет аккаунта?
+                    <a href="register.html">Зарегистрироваться</a>
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__top">
+
+            <div class="footer__brand">
+                <a href="index.html" class="logo">
+                    <span class="logo__text">BEST</span>
+                    <span class="logo__accent">GAMES</span>
+                </a>
+
+                <p>
+                    Магазин компьютерных игр для настоящих геймеров.
+                </p>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Клиентам</h3>
+
+                <a href="catalog.html">Каталог</a>
+                <a href="MoeTvorenie.html">Войти</a>
+                <a href="register.html">Регистрация</a>
+                <a href="profile.html">Профиль</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Партнёрам</h3>
+
+                <a href="#">Стать партнёром</a>
+                <a href="#">Условия сотрудничества</a>
+                <a href="#">Реклама</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>О нас</h3>
+
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Помощь</a>
+            </div>
+
+
+            <div class="footer__column footer__contacts">
+                <h3>Контакты</h3>
+
+                <a href="tel:88009995599">
+                    8-908-142-33-97
+                </a>
+
+                <a href="mailto:best@games.ru">
+                    best@games.ru
+                </a>
+
+                <span>Ежедневно, 24/7</span>
+            </div>
+
+        </div>
+
+
+        <div class="footer__bottom">
+
+            <p>
+                © 2026 Best Games. Все права защищены.
+            </p>
+
+            <div class="footer__links">
+                <a href="index_light.html">
+                    Светлая тема
+                </a>
+
+                <a href="#">
+                    Политика конфиденциальности
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
